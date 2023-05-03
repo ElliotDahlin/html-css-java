@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Person Info Example</title>
+  </head>
+  <body>
+    <h1 id="person-info"></h1>
+
+    <script>
+      
+      var firstName = "Elliot";
+      var lastName = "Dahlin";
+      var age = 30;
+
+      var personInfo = firstName + " " + lastName + " är " + age + " år gammal.";
+
+      var heading = document.getElementById("person-info");
+
+      
+      heading.innerHTML = personInfo;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Företagsregister</title>
+    <link rel="stylesheet" href="hemsida.css">
+</head>
+<body>
+    <header>
+        <h1>Företagsregister</h1>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <h2>Lägg till ny person</h2>
+            <form id="person-form">
+                <label for="name">Namn:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="position">Position:</label>
+                <input type="text" id="position" name="position" required>
+                
+                <button type="submit">Lägg till person</button>
+            </form>
+        </section>
+
+        <section class="list-container">
+            <h2>Personer</h2>
+            <ul id="person-list"></ul>
+        </section>
+    </main>
+
+    <script src="hemsida.js"></script>
+</body>
+</html>

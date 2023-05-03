@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hemsida</title>
+    <script src="hemsida.js">defer</script>
+</head>
+<body>
+   <form action="/login" method="post">
+    <h1>Välkommen till min hemsida</h1>
+    <div> <label for="username">Användarnamn:</label>
+        <input type="text" id="username" name="username" required><br><br>
+    </div>
+    <div>
+        <label for="password">Lösenord:</label>
+    <input type="password" id="password" name="password" required><br><br>
+    </div>
+    <div>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br><br>
+    </div>
+    <div>
+        <label for="firstname">Firstname:</label>
+        <input type="text" name="firstname" id="firstname"><br><br>
+    </div>
+    <div>
+        <label for="lastname">Lastname</label>
+        <input type="text" name="lastname" id="lastname"><br><br>
+    </div>
+
+    <div>
+        <button type="submit">Logga in</button>
+    </div>
+   </form>
+   
+</body>
+</html>
