@@ -11,17 +11,24 @@
         <h1>Företagsregister</h1>
     </header>
 
+    <div class="bakgrundsbild"></div>
     <main>
         <section class="form-container">
             <h2>Lägg till ny person</h2>
             <form id="person-form">
-                <label for="name">Namn:</label>
-                <input type="text" id="name" name="name" required>
+                <div class="form-group">
+                    <label for="name">Namn:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
                 
-                <label for="position">Position:</label>
-                <input type="text" id="position" name="position" required>
+                <div class="form-group">
+                    <label for="position">Position:</label>
+                    <input type="text" id="position" name="position" required>
+                </div>
                 
-                <button type="submit">Lägg till person</button>
+                <div class="form-group">
+                    <button type="submit">Lägg till person</button>
+                </div>
             </form>
         </section>
 
