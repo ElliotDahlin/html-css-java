@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const personForm = document.getElementById('person-form');
   const personList = document.getElementById('person-list');
+  const searchInput = document.getElementById('search-input');
 
   const fetchData = async () => {
     const response = await fetch('hemsida.json');
@@ -39,6 +40,14 @@ document.addEventListener('DOMContentLoaded', () => {
     fetchData();
   };
 
+  searchInput.addEventListener('input', async () => {
+    const searchTerm = searchInput.value.trim().toLowerCase();
+    const response = await fetch('hemsida.json');
+    const data = await response.json();
+    const filteredData = data.filter((person) => person.name.toLowerCase().includes(searchTerm));
+    displayData(filteredData);
+  });
+
   personForm.addEventListener('submit', async (event) => {
     event.preventDefault();
 
@@ -57,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
     await fetch('updateData', {
       method: 'POST',
       headers: {
-        'Content-Type': 'applicatwion/json',
+        'Content-Type': 'application/json',
       },
       body: JSON.stringify(data),
     });
