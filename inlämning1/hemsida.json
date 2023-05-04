@@ -1,14 +1,18 @@
 [
   {
-    "name": "Elliot Dahlin",
+    "name": "Marcus Henriksson",
+    "position": "Fullstack Gud"
+  },
+  {
+    "name": "Anton",
+    "position": "Pappa betalar"
+  },
+  {
+    "name": "Lago",
+    "position": "Spelberoende bonanza"
+  },
+  {
+    "name": "Elliot",
     "position": "VD"
-  },
-  {
-    "name": "Elliot Dahlin",
-    "position": "Supreme Leader"
-  },
-  {
-    "name": "Robin Pilhede",
-    "position": "Supreme Rizzlord"
   }
 ]
